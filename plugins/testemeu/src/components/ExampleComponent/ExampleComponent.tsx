@@ -10,6 +10,7 @@ import {
 } from '@backstage/core-components';
 import { ArgoCd } from '../ArgoCd';
 
+
 export const ExampleComponent = () => (
   <Page themeId="tool">
     <Header title="Welcome to testemeu!" subtitle="Optional subtitle">
@@ -23,6 +24,7 @@ export const ExampleComponent = () => (
       <Grid container spacing={3} direction="column">
         <Grid item>
           <ArgoCd />
+          
         </Grid>
       </Grid>
     </Content>
