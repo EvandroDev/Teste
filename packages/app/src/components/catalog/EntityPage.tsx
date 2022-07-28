@@ -70,6 +70,7 @@ import {
 
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
+import { ArgoCd } from '@internal/plugin-testemeu/src/components/ArgoCd';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -136,9 +137,10 @@ const overviewContent = (
       <EntityCatalogGraphCard variant="gridItem" height={400} />
     </Grid>
     <Grid item md={12} xs={12}>
-        <div>
-          <h1>testeeeee</h1>
-        </div>
+      <div>
+        <h1>testeeeee</h1>
+        <ArgoCd />
+      </div>
     </Grid>
     <Grid item md={4} xs={12}>
       <EntityLinksCard />
@@ -197,7 +199,10 @@ const websiteEntityPage = (
       {cicdContent}
     </EntityLayout.Route>
     <EntityLayout.Route path="/essa" title="essamesmo">
-      <div>Hi!</div>
+      <div>
+        Hi!
+        <ArgoCd />
+      </div>
     </EntityLayout.Route>
 
     <EntityLayout.Route path="/dependencies" title="Dependencies">
