@@ -5,6 +5,11 @@ app:
 organization:
   name: My Company
 
+gym:
+  argocdToken: 
+    $env: ARGOTOKEN
+  argocdUrl: https://argocd.adm-stg.gcp.gruposbf.com.br
+
 backend:
   # Used for enabling authentication, secret is shared by all backend plugins
   # See https://backstage.io/docs/tutorials/backend-to-backend-auth for

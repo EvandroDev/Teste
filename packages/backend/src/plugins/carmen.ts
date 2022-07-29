@@ -10,7 +10,10 @@ export default async function createPlugin(
 
   // The env contains a lot of goodies, but our router currently only
   // needs a logger
-  return await createRouter({
-    logger: env.logger,
-  });
+  return await createRouter(
+    {
+      logger: env.logger,
+    },
+    env.config,
+  );
 }

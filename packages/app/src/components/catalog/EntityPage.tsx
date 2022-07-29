@@ -138,7 +138,6 @@ const overviewContent = (
     </Grid>
     <Grid item md={12} xs={12}>
       <div>
-        <h1>testeeeee</h1>
         <ArgoCd />
       </div>
     </Grid>
@@ -198,9 +197,8 @@ const websiteEntityPage = (
     <EntityLayout.Route path="/ci-cd" title="CI/CD">
       {cicdContent}
     </EntityLayout.Route>
-    <EntityLayout.Route path="/essa" title="essamesmo">
+    <EntityLayout.Route path="/essa" title="GYM">
       <div>
-        Hi!
         <ArgoCd />
       </div>
     </EntityLayout.Route>
